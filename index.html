@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synx__929</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #0e9e9f;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url('https://www.transparenttextures.com/patterns/dark-wall-hex.png');
+    }
+    h1 {
+      font-size: 3em;
+      color: #ff3366;
+      animation: glitch 1s infinite;
+    }
+    h2 {
+      font-size: 1.5em;
+      color: #ffdd00;
+    }
+    .content {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: fadeIn 3s ease-in-out;
+    }
+    .code {
+      font-size: 1.1em;
+      color: #00ffcc;
+      margin-top: 20px;
+    }
+    .signature {
+      margin-top: 50px;
+      font-size: 1.2em;
+      color: #ff9966;
+    }
+    .hidden-msg {
+      font-size: 1.3em;
+      color: #b0b0b0;
+      opacity: 0.5;
+      bottom: 15%;
+      width: 100%;
+      padding-bottom: 20px;
+      text-align: center;
+      animation: blink 1.5s step-start infinite;
+    }
+    .hidden-links {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #ff9900;
+      cursor: pointer;
+    }
+    .hidden-links a {
+      text-decoration: none;
+      color: #ff9900;
+    }
+    .hidden-links a:hover {
+      color: #ff3366;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 1px 1px 2px red, 0 0 25px blue, 0 0 5px darkblue; }
+      50% { text-shadow: 1px 1px 2px yellow, 0 0 25px green, 0 0 5px purple; }
+      100% { text-shadow: 1px 1px 2px red, 0 0 25px blue, 0 0 5px darkblue; }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes blink {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    .login-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+    }
+    .login-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #00ffcc;
+      background-color: #333;
+      color: #00ffcc;
+    }
+    .login-container button {
+      padding: 10px 20px;
+      background-color: #ff3366;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .login-container button:hover {
+      background-color: #ff6699;
+    }
+    .error {
+      color: #ff0000;
+      margin-top: 10px;
+    }
+
+    .piscar {
+  animation: piscar 2s infinite;
+}
+
+@keyframes piscar {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+  </style>
+</head>
+<body>
+
+  <div id="login" class="login-container">
+    <h2>Root access?</h2>
+    <input type="password" id="password" placeholder="Tenha Certeza">
+    <button onclick="checkPassword()">Autenticar</button>
+    <div id="error" class="error"></div>
+  </div>
+
+  <div id="content" class="content">
+    <h1>Synx__929</h1>
+    <h2>Root of Emotional Injection</h2>
+
+    <div class="code">
+      <p>"The system was activated on 929. The flaw came years later, but it was there from the start."</p>
+    </div>
+
+    <div class="signature">
+      <p>::init.boot -> synx_929@root // flaw_detected [delayed crash]</p>
+    </div>
+
+    <div class="hidden-msg">
+      <p>"O relacionamento era um programa perfeito, até começarmos a introduzir as falhas."</p>
+    </div>
+
+    <div class="hidden-links">
+      <p><a href="#">[ 02/09/21 ] - Trace Route Error</a></p>
+      <p><a href="#">[ 18/08/19 ] - Subprocess Spawn Failure</a></p>
+    </div>
+  </div>
+    
+      <script>
+        function checkPassword() {
+          var password = document.getElementById("password").value;
+          if (password === "290918") {
+            document.getElementById("login").style.display = "none";
+            document.getElementById("content").style.display = "block";
+          } else {
+            document.getElementById("error").innerHTML = "Não é Você!";
+          }
+        }
+      </script>
+      <p class="piscar">Uma data, um sentimento</p>
+    
+</body>
+</html>
